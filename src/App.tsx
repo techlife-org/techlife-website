@@ -32,8 +32,16 @@ import ImageTest from './pages/ImageTest';
 // Dashboard Pages
 
 // Main styles are imported in public/index.html
+import './assets/css/techlife-custom.css';
+import './assets/css/color-override.css';
+import './assets/css/fixed-navbar.css';
 
 function App() {
+  // Apply theme class to body for color scheme
+  React.useEffect(() => {
+    document.body.className = 'theme-blue4';
+  }, []);
+
   return (
     <Router>
       <div className="App">

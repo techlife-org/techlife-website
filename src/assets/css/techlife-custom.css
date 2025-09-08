@@ -1,12 +1,20 @@
 /* Techlife Global Ventures Custom Styles */
 
-/* Color Variables Override */
+/* Color Variables Override - Techlife Brand Colors */
 :root {
   --theme-color: #0046ff !important;
   --theme-color2: #001243 !important;
+  --theme-color3: #0046ff !important;
   --title-color: #001243 !important;
   --primary-blue: #0046ff;
   --dark-navy: #001243;
+}
+
+/* Ensure body uses the color scheme */
+body {
+  --theme-color: #0046ff !important;
+  --theme-color2: #001243 !important;
+  --title-color: #001243 !important;
 }
 
 /* Service Category Cards */
@@ -357,6 +365,116 @@
   .service-card_title {
     font-size: 16px;
   }
+}
+
+/* Team Expertise Tags */
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.expertise-tag {
+  display: inline-block;
+  background: rgba(0, 70, 255, 0.1);
+  color: var(--theme-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 70, 255, 0.2);
+}
+
+/* Service Tags for Projects */
+.service-tag {
+  display: inline-block;
+  background: rgba(0, 18, 67, 0.1);
+  color: var(--title-color);
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 500;
+  margin: 2px;
+}
+
+.project-services {
+  margin-top: 10px;
+}
+
+/* Expertise Cards */
+.expertise-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.expertise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.expertise-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 70, 255, 0.1);
+  border-radius: 50%;
+  color: var(--theme-color);
+  font-size: 24px;
+}
+
+.expertise-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 15px;
+}
+
+.expertise-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Feature List Enhancements */
+.feature-list_icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--theme-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.feature-list_item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.feature-list_title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 8px;
+}
+
+.feature-list_text {
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
 }
 
 /* Animation Classes */

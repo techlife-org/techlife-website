@@ -10,11 +10,43 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsSticky(window.scrollY > 500);
+      // Get hero section height or use a smaller fallback for testing
+      const heroSection = document.getElementById('hero') || document.querySelector('.th-hero-wrapper');
+      let heroHeight = 300; // Default fallback
+      
+      if (heroSection) {
+        heroHeight = heroSection.offsetHeight;
+      } else {
+        // If no hero section found, use viewport height
+        heroHeight = window.innerHeight * 0.8;
+      }
+      
+      // Make navbar sticky when scrolled past hero section
+      // TEMP: For immediate testing, make it sticky after 150px scroll
+      const shouldBeSticky = window.scrollY > 150;
+      
+      setIsSticky(shouldBeSticky);
+      
+      // Add/remove body class to prevent layout jump
+      if (shouldBeSticky) {
+        document.body.classList.add('navbar-fixed');
+      } else {
+        document.body.classList.remove('navbar-fixed');
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll); // Recalculate on resize
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+      // Clean up body class
+      document.body.classList.remove('navbar-fixed');
+    };
   }, []);
 
   const toggleMenu = () => {
@@ -31,6 +63,21 @@ const Header = () => {
 
   const isActive = (path) => {
     return location.pathname === path ? 'active' : '';
+  };
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleNavClick = (e, sectionId) => {
+    if (location.pathname === '/' && sectionId) {
+      e.preventDefault();
+      scrollToSection(sectionId);
+      setIsMenuOpen(false);
+    }
   };
 
   return (
@@ -121,17 +168,39 @@ const Header = () => {
           </div>
           <div className="th-mobile-menu">
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+              <li>
+                <a href="#about-sec" onClick={(e) => handleNavClick(e, 'about-sec')}>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#service-sec" onClick={(e) => handleNavClick(e, 'service-sec')}>
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio-sec" onClick={(e) => handleNavClick(e, 'portfolio-sec')}>
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a href="#team-sec" onClick={(e) => handleNavClick(e, 'team-sec')}>
+                  Team
+                </a>
+              </li>
+              <li>
+                <a href="#contact-sec" onClick={(e) => handleNavClick(e, 'contact-sec')}>
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Main Header */}
-      <header className="th-header header-layout1 onepage-nav">
+      {/* Header Top - Only visible when not sticky */}
+      {!isSticky && (
         <div className="header-top">
           <div className="container">
             <div className="row justify-content-center justify-content-lg-between align-items-center gy-2">
@@ -140,11 +209,11 @@ const Header = () => {
                   <ul>
                     <li>
                       <i className="fas fa-map-location"></i>
-                      53-B Ja'oji Quaters, Zaria Road, Kano State, Nigeria
+                      No 54-B Jaoji Quarters, Kano 700101, Kano State, Nigeria
                     </li>
                     <li>
                       <i className="fas fa-phone"></i>
-                      <a href="tel:+2349131033131">+234-913-103-3131</a>
+                      <a href="tel:+2349131033131">+234 913 103 3131</a>
                     </li>
                     <li>
                       <i className="fas fa-envelope"></i>
@@ -156,7 +225,7 @@ const Header = () => {
               <div className="col-auto">
                 <div className="header-social">
                   <span className="social-title">Follow Us On : </span>
-                  <a href="https://www.instagram.com/">
+                  <a href="https://www.instagram.com/techlife_nigeria">
                     <i className="fab fa-instagram"></i>
                   </a>
                   <a href="https://www.twitter.com/">
@@ -173,8 +242,11 @@ const Header = () => {
             </div>
           </div>
         </div>
+      )}
 
-        <div className={`sticky-wrapper ${isSticky ? 'sticky' : ''}`}>
+      {/* Main Header - Becomes fixed when sticky */}
+      <header className={`th-header header-layout1 onepage-nav ${isSticky ? 'header-fixed' : ''}`}>
+        <div className={`sticky-wrapper ${isSticky ? 'sticky fixed-navbar' : ''}`}>
           <div className="menu-area">
             <div className="container">
               <div className="row align-items-center justify-content-between">
@@ -192,20 +264,30 @@ const Header = () => {
                       <li className={isActive('/')}>
                         <Link to="/">Home</Link>
                       </li>
-                      <li className={isActive('/about')}>
-                        <Link to="/about">About Us</Link>
+                      <li>
+                        <a href="#about-sec" onClick={(e) => handleNavClick(e, 'about-sec')}>
+                          About Us
+                        </a>
                       </li>
-                      <li className={isActive('/services')}>
-                        <Link to="/services">Services</Link>
+                      <li>
+                        <a href="#service-sec" onClick={(e) => handleNavClick(e, 'service-sec')}>
+                          Services
+                        </a>
                       </li>
-                      <li className={isActive('/projects')}>
-                        <Link to="/projects">Gallery</Link>
+                      <li>
+                        <a href="#portfolio-sec" onClick={(e) => handleNavClick(e, 'portfolio-sec')}>
+                          Portfolio
+                        </a>
                       </li>
-                      <li className={isActive('/blog')}>
-                        <Link to="/blog">Blog</Link>
+                      <li>
+                        <a href="#team-sec" onClick={(e) => handleNavClick(e, 'team-sec')}>
+                          Team
+                        </a>
                       </li>
-                      <li className={isActive('/contact')}>
-                        <Link to="/contact">Contact Us</Link>
+                      <li>
+                        <a href="#contact-sec" onClick={(e) => handleNavClick(e, 'contact-sec')}>
+                          Contact
+                        </a>
                       </li>
                     </ul>
                   </nav>
@@ -236,7 +318,7 @@ const Header = () => {
                     >
                       <i className="fal fa-search"></i>
                     </button>
-                    <Link to="/contact" className="th-btn style3 shadow-none">
+                    <Link to="/contact" className="th-btn style3 shadow-none text-white">
                       Make Appointment
                       <i className="fas fa-arrow-right ms-1"></i>
                     </Link>

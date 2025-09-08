@@ -24,8 +24,8 @@ const Footer = () => {
                   </div>
                   <div className="media-body">
                     <span className="footer-contact_text">Quick Call Us:</span>
-                    <a href="tel:+19088000393" className="footer-contact_link">
-                      +190-8800-0393
+                    <a href="tel:+2349131033131" className="footer-contact_link">
+                      +234 913 103 3131
                     </a>
                   </div>
                 </div>
@@ -35,8 +35,8 @@ const Footer = () => {
                   </div>
                   <div className="media-body">
                     <span className="footer-contact_text">Mail Us On:</span>
-                    <a href="mailto:info@webteck.com" className="footer-contact_link">
-                      info@webteck.com
+                    <a href="mailto:info@techlife.ng" className="footer-contact_link">
+                      info@techlife.ng
                     </a>
                   </div>
                 </div>
@@ -46,8 +46,8 @@ const Footer = () => {
                   </div>
                   <div className="media-body">
                     <span className="footer-contact_text">Visit Location:</span>
-                    <a href="https://www.google.com/maps" className="footer-contact_link">
-                      54 Flemington, USA
+                    <a href="https://www.google.com/maps/search/No+54-B+Jaoji+Quarters,+Kano+700101,+Kano+State,+Nigeria" className="footer-contact_link">
+                      No 54-B Jaoji Quarters, Kano 700101, Kano State, Nigeria
                     </a>
                   </div>
                 </div>
@@ -65,8 +65,8 @@ const Footer = () => {
                 <h3 className="widget_title">About Company</h3>
                 <div className="th-widget-about">
                   <p className="about-text">
-                    Professionally redefine transparent ROI through low-risk high-yield imperatives. 
-                    Progressively create empowered. cost effective users via team driven.
+                    Techlife Global Ventures Ltd is a leading IT solutions company based in Kano, Nigeria. 
+                    We specialize in software development, cybersecurity, data analytics, and digital transformation services.
                   </p>
                   <div className="th-social">
                     <a href="https://www.facebook.com/">
@@ -78,11 +78,11 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.whatsapp.com/">
-                      <i className="fab fa-whatsapp"></i>
+                    <a href="https://www.instagram.com/techlife_nigeria">
+                      <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.youtube.com/">
-                      <i className="fab fa-youtube"></i>
+                    <a href="https://www.techlife.ng">
+                      <i className="fas fa-globe"></i>
                     </a>
                   </div>
                 </div>
@@ -174,7 +174,7 @@ const Footer = () => {
             <div className="col-lg-6">
               <p className="copyright-text">
                 Copyright <i className="fal fa-copyright"></i> 2025{' '}
-                <a href="https://themeforest.net/user/themeholy">Themeholy</a>. All Rights Reserved.
+                <a href="https://www.techlife.ng">Techlife Global Ventures Ltd</a>. All Rights Reserved.
               </p>
             </div>
             <div className="col-lg-6 text-end d-none d-lg-block">
