@@ -56,7 +56,7 @@ const ImageTest = () => {
       
       <div style={{ marginBottom: '20px' }}>
         <h2>Direct Image Test (without React)</h2>
-        <img src="/assets/img/logo.svg" alt="Direct Logo" style={{ width: '200px' }} />
+        <img src="/assets/img/logo.png" alt="Direct Logo" style={{ width: '200px' }} />
         <img src="/assets/img/icon/service_featured_1.svg" alt="Direct Icon" style={{ width: '50px' }} />
       </div>
       

@@ -5,7 +5,7 @@ const ImageWithFallback = ({
   alt, 
   className = '', 
   style = {}, 
-  fallbackSrc = '/assets/img/logo.svg',
+  fallbackSrc = '/assets/img/logo.png',
   showLoadingState = false 
 }) => {
   const [imgSrc, setImgSrc] = useState(src);

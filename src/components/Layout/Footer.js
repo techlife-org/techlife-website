@@ -11,8 +11,8 @@ const Footer = () => {
             <div className="col-xl-3">
               <div className="footer-logo">
                 <Link className="icon-masking" to="/">
-                  <span data-mask-src="/assets/img/logo-white.svg" className="mask-icon"></span>
-                  <img src="/assets/img/logo-white.svg" alt="Webteck" />
+                  <span data-mask-src="/assets/img/Techlife-logor.png" className="mask-icon"></span>
+                  <img src="/assets/img/Techlife-logor.png" alt="Webteck" className="img-fluid" style={{ width: '150px' }}/>
                 </Link>
               </div>
             </div>
@@ -24,7 +24,7 @@ const Footer = () => {
                   </div>
                   <div className="media-body">
                     <span className="footer-contact_text">Quick Call Us:</span>
-                    <a href="tel:+2349131033131" className="footer-contact_link">
+                    <a href="tel:+2349131033131" className="footer-contact_link text-white" style={{ fontSize: '16px' }}>
                       +234 913 103 3131
                     </a>
                   </div>
@@ -35,7 +35,7 @@ const Footer = () => {
                   </div>
                   <div className="media-body">
                     <span className="footer-contact_text">Mail Us On:</span>
-                    <a href="mailto:info@techlife.ng" className="footer-contact_link">
+                    <a href="mailto:info@techlife.ng" className="footer-contact_link text-white" style={{ fontSize: '16px' }}>
                       info@techlife.ng
                     </a>
                   </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                   </div>
                   <div className="media-body">
                     <span className="footer-contact_text">Visit Location:</span>
-                    <a href="https://www.google.com/maps/search/No+54-B+Jaoji+Quarters,+Kano+700101,+Kano+State,+Nigeria" className="footer-contact_link">
+                    <a href="https://www.google.com/maps/search/No+54-B+Jaoji+Quarters,+Kano+700101,+Kano+State,+Nigeria" className="footer-contact_link text-white" style={{ fontSize: '16px' }}>
                       No 54-B Jaoji Quarters, Kano 700101, Kano State, Nigeria
                     </a>
                   </div>

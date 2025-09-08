@@ -162,8 +162,8 @@ const Header = () => {
           </button>
           <div className="mobile-logo">
             <Link className="icon-masking" to="/">
-              <span data-mask-src="/assets/img/logo.svg" className="mask-icon"></span>
-              <img src="/assets/img/logo.svg" alt="Webteck" />
+              <span data-mask-src="/assets/img/logo.png" className="mask-icon"></span>
+              <img src="/assets/img/logo.png" alt="Webteck" className="img-fluid" style={{ width: '200px' }}/>
             </Link>
           </div>
           <div className="th-mobile-menu">
@@ -251,10 +251,10 @@ const Header = () => {
             <div className="container">
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
-                  <div className="header-logo">
+                  <div className="">
                     <Link className="icon-masking" to="/">
-                      <span data-mask-src="/assets/img/logo.svg" className="mask-icon"></span>
-                      <img src="/assets/img/logo.svg" alt="Webteck" />
+                      <span data-mask-src="/assets/img/logo.png" className="mask-icon"></span>
+                      <img src="/assets/img/logo.png" alt="Webteck" className="img-fluid" style={{ width: '200px' }}/>
                     </Link>
                   </div>
                 </div>

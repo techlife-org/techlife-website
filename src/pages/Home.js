@@ -293,7 +293,7 @@ const Home = () => {
                   <p className="hero-text">
                     {heroSlides[0].description}
                   </p>
-                  <div className="btn-group">
+                  {/* <div className="btn-group">
                     <Button 
                       to="/about" 
                       style="style3"
@@ -308,7 +308,7 @@ const Home = () => {
                     >
                       CONTACT US
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </HeroBackground>
@@ -421,6 +421,7 @@ const Home = () => {
                   <Button 
                     to="/about"
                     icon="fa-regular fa-arrow-right"
+                    className="th-btn text-white"
                   >
                     DISCOVER MORE
                   </Button>
@@ -484,7 +485,7 @@ const Home = () => {
                   <p className="service-card_text">
                     {service.description}
                   </p>
-                  <Link to={`/service-details/${service.id}`} className="th-btn">
+                  <Link to={`/service-details/${service.id}`} className="th-btn text-white">
                     Read More
                     <i className="fa-regular fa-arrow-right ms-2"></i>
                   </Link>
@@ -499,6 +500,7 @@ const Home = () => {
             <Button 
               to="/services"
               icon="fa-regular fa-arrow-right"
+              className="th-btn text-white"
             >
               VIEW ALL SERVICES
             </Button>
@@ -725,26 +727,6 @@ const Home = () => {
                       {member.description}
                     </p>
                     
-                    {/* Expertise Tags */}
-                    {member.expertise && (
-                      <div className="mb-3">
-                        {member.expertise.slice(0, 3).map((skill, index) => (
-                          <span 
-                            key={index} 
-                            className="badge me-1 mb-1" 
-                            style={{
-                              backgroundColor: 'rgba(0, 70, 255, 0.1)',
-                              color: '#0046ff',
-                              border: '1px solid rgba(0, 70, 255, 0.2)',
-                              fontSize: '11px'
-                            }}
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    
                     {/* Social Links */}
                     <div className="d-flex gap-2">
                       {member.social.linkedin && (
@@ -964,6 +946,7 @@ const Home = () => {
                   to="/contact" 
                   style="style3"
                   icon="fa-regular fa-arrow-right"
+                  className="th-btn text-white"
                 >
                   GET FREE CONSULTATION
                 </Button>

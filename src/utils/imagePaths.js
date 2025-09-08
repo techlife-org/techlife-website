@@ -7,7 +7,7 @@ export const getImagePath = (path) => {
 
 // Common image paths
 export const IMAGES = {
-  logo: '/assets/img/logo.svg',
+  logo: '/assets/img/logo.png',
   logoWhite: '/assets/img/logo-white.svg',
   
   // Service icons
