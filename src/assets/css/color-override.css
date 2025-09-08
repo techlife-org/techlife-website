@@ -1,0 +1,498 @@
+/* Techlife Color Scheme Override */
+/* Primary Colors: #0046ff (Bright Blue) and #001243 (Dark Navy Blue) */
+
+/* Root Variables Override */
+:root {
+  --theme-color: #0046ff !important;
+  --theme-color2: #001243 !important;
+  --theme-color3: #0046ff !important;
+  --title-color: #001243 !important;
+  --primary-blue: #0046ff;
+  --dark-navy: #001243;
+}
+
+/* Body Theme Classes Override */
+body.theme-blue {
+  --theme-color: #0046ff !important;
+  background-color: #f8faff;
+}
+
+body.theme-blue2 {
+  --theme-color: #0046ff !important;
+  background-color: #f3f2ea;
+}
+
+body.theme-blue3 {
+  --theme-color: #0046ff !important;
+}
+
+body.theme-blue4 {
+  --theme-color: #0046ff !important;
+  --theme-color2: #001243 !important;
+}
+
+body.theme-blue5 {
+  --theme-color: #0046ff !important;
+  background-color: #0e0e0e;
+}
+
+/* Button Overrides */
+.th-btn {
+  background-color: var(--theme-color) !important;
+}
+
+.th-btn:hover:before,
+.th-btn:hover:after {
+  background-color: var(--title-color) !important;
+}
+
+.th-btn.style2:hover:before,
+.th-btn.style2:hover:after {
+  background-color: var(--white-color) !important;
+}
+
+.th-btn.style3:hover:before,
+.th-btn.style3:hover:after {
+  background-color: var(--white-color) !important;
+}
+
+.th-btn.style4 {
+  background-color: var(--title-color) !important;
+}
+
+.th-btn.style5:hover:before,
+.th-btn.style5:hover:after {
+  background-color: var(--title-color) !important;
+}
+
+.th-btn.style6:hover:before,
+.th-btn.style6:hover:after {
+  background-color: var(--theme-color) !important;
+}
+
+.th-btn.style7:hover:before,
+.th-btn.style7:hover:after {
+  background-color: var(--theme-color) !important;
+}
+
+.th-btn.style9:hover:before,
+.th-btn.style9:hover:after {
+  background-color: var(--title-color) !important;
+}
+
+.th-btn.style10 {
+  color: var(--theme-color) !important;
+}
+
+.th-btn.style11 {
+  background-color: var(--theme-color2) !important;
+  color: var(--title-color) !important;
+}
+
+.th-btn.style13:hover:before,
+.th-btn.style13:hover:after {
+  background-color: var(--theme-color) !important;
+}
+
+.th-btn.blue-border:hover:before,
+.th-btn.blue-border:hover:after {
+  background-color: var(--theme-color) !important;
+}
+
+/* Link and Text Colors */
+a {
+  color: var(--theme-color) !important;
+}
+
+a:hover {
+  color: var(--title-color) !important;
+}
+
+.text-theme {
+  color: var(--theme-color) !important;
+}
+
+.text-title {
+  color: var(--title-color) !important;
+}
+
+/* Social Media Icons */
+.th-social a:hover {
+  background-color: var(--theme-color) !important;
+}
+
+.th-social.style2 a:hover {
+  border-color: var(--theme-color) !important;
+  background-color: var(--theme-color) !important;
+}
+
+/* Form Elements */
+select:focus,
+.form-control:focus,
+.form-select:focus,
+textarea:focus,
+input:focus {
+  border-color: var(--theme-color) !important;
+}
+
+input[type="checkbox"]:checked ~ label:before {
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+}
+
+input[type="radio"]:checked ~ label::before {
+  border-color: var(--theme-color) !important;
+  background-color: var(--theme-color) !important;
+}
+
+/* Navigation and Menu */
+.th-menu-toggle {
+  background-color: var(--theme-color) !important;
+}
+
+.th-menu-toggle:hover {
+  background-color: var(--title-color) !important;
+}
+
+.th-menu-toggle2 {
+  background-color: var(--theme-color) !important;
+}
+
+.th-menu-toggle2:hover {
+  background-color: var(--title-color) !important;
+}
+
+/* Slider and Pagination */
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--theme-color2) !important;
+}
+
+.swiper-pagination-fraction {
+  color: var(--theme-color) !important;
+}
+
+.swiper-pagination-fraction .swiper-pagination-current {
+  color: var(--title-color) !important;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet:before {
+  border: 1px solid var(--theme-color) !important;
+  background: var(--theme-color) !important;
+}
+
+.slider-arrow {
+  color: var(--theme-color) !important;
+}
+
+.slider-arrow:hover {
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+}
+
+.slider-arrow.style3 {
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+}
+
+.slider-arrow.style3:hover {
+  background-color: var(--title-color) !important;
+  border-color: var(--title-color) !important;
+}
+
+.slider-arrow.style5:hover {
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+}
+
+/* Play Button */
+.play-btn > i {
+  color: var(--theme-color) !important;
+}
+
+.play-btn:hover:after,
+.play-btn:hover::before,
+.play-btn:hover i {
+  background-color: var(--theme-color) !important;
+}
+
+.play-btn.style3 > i {
+  background-color: var(--theme-color) !important;
+}
+
+.play-btn.style3:before,
+.play-btn.style3:after {
+  background-color: var(--theme-color) !important;
+}
+
+/* Icon Button */
+.icon-btn:hover {
+  color: var(--theme-color) !important;
+}
+
+/* Link Button */
+.link-btn {
+  color: var(--theme-color) !important;
+}
+
+.link-btn:before {
+  background-color: var(--theme-color) !important;
+}
+
+.link-btn:hover {
+  color: var(--theme-color) !important;
+}
+
+.line-btn {
+  color: var(--theme-color) !important;
+}
+
+.line-btn:before {
+  background-color: var(--theme-color) !important;
+}
+
+.line-btn:hover {
+  color: var(--title-color) !important;
+}
+
+.line-btn:hover::before {
+  background-color: var(--title-color) !important;
+}
+
+/* Scroll to Top */
+.scroll-top:after {
+  color: var(--theme-color) !important;
+  border: 2px solid var(--theme-color) !important;
+}
+
+.scroll-top svg {
+  color: var(--theme-color) !important;
+}
+
+.scroll-top .progress-circle path {
+  stroke: var(--theme-color) !important;
+}
+
+/* Sub Title */
+.sub-title {
+  color: var(--theme-color) !important;
+}
+
+/* Box Title Links */
+.box-title a:hover {
+  color: var(--theme-color) !important;
+}
+
+/* Background Colors */
+.bg-theme {
+  background-color: var(--theme-color) !important;
+}
+
+/* Gradient Backgrounds */
+.th-btn.btn-gradient {
+  background: linear-gradient(180deg, var(--theme-color) 0%, var(--theme-color2) 100%) !important;
+}
+
+.th-btn.btn-gradient:hover {
+  background: linear-gradient(180deg, var(--theme-color2) 0%, var(--theme-color) 100%) !important;
+}
+
+.th-btn.btn-gradient2 {
+  background-image: linear-gradient(to right, var(--theme-color), var(--theme-color2), var(--theme-color), var(--theme-color2)) !important;
+}
+
+.th-btn.th-gradient-btn {
+  background: linear-gradient(180deg, var(--theme-color) 0%, var(--theme-color2) 100%) !important;
+}
+
+.th-btn.th-gradient-btn:hover {
+  background: linear-gradient(180deg, var(--theme-color2) 0%, var(--theme-color) 100%) !important;
+}
+
+/* Border Styles */
+.th-btn.style-border {
+  color: var(--theme-color) !important;
+  border: 1px solid var(--theme-color) !important;
+}
+
+.th-btn.style-border:hover {
+  border-color: var(--theme-color) !important;
+}
+
+.th-btn.style-border:hover:before,
+.th-btn.style-border:hover:after {
+  background-color: var(--theme-color) !important;
+}
+
+.th-btn.style-border2 {
+  color: var(--title-color) !important;
+  border: 1px solid var(--title-color) !important;
+}
+
+.th-btn.style-border2:hover {
+  border-color: var(--title-color) !important;
+}
+
+.th-btn.style-border2:hover:before,
+.th-btn.style-border2:hover:after {
+  background-color: var(--title-color) !important;
+}
+
+.th-btn.blue-border {
+  border: 1px solid var(--theme-color) !important;
+}
+
+/* Badge */
+.badge {
+  background-color: var(--theme-color) !important;
+}
+
+/* Preloader */
+.th-preloader .animation-preloader .txt-loading .characters:before {
+  color: var(--theme-color) !important;
+}
+
+/* Custom Techlife Specific Overrides */
+.text-theme,
+.theme-color {
+  color: var(--theme-color) !important;
+}
+
+.bg-primary,
+.bg-theme-color {
+  background-color: var(--theme-color) !important;
+}
+
+.border-theme {
+  border-color: var(--theme-color) !important;
+}
+
+.border-title {
+  border-color: var(--title-color) !important;
+}
+
+/* Hover Effects */
+.hover-theme:hover {
+  color: var(--theme-color) !important;
+}
+
+.hover-title:hover {
+  color: var(--title-color) !important;
+}
+
+/* Service Featured Cards */
+.service-featured:hover {
+  border-color: var(--theme-color) !important;
+}
+
+/* Service Cards */
+.service-card:hover {
+  border-color: var(--theme-color) !important;
+}
+
+/* Feature List */
+.feature-list_icon {
+  color: var(--theme-color) !important;
+}
+
+/* Counter Cards */
+.counter-card_number {
+  color: var(--theme-color) !important;
+}
+
+/* Team Cards */
+.team-desig {
+  color: var(--theme-color) !important;
+}
+
+/* Blog Elements */
+.blog-meta a:hover {
+  color: var(--theme-color) !important;
+}
+
+/* Contact Info */
+.contact-info_icon {
+  color: var(--theme-color) !important;
+}
+
+/* Footer */
+.footer-contact_icon {
+  color: var(--theme-color) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  :root {
+    --theme-color: #0046ff !important;
+    --theme-color2: #001243 !important;
+    --title-color: #001243 !important;
+  }
+}
+
+/* Ensure all theme color references use the new colors */
+[class*="theme-color"],
+[class*="text-theme"],
+[class*="bg-theme"] {
+  color: var(--theme-color) !important;
+}
+
+[class*="bg-theme"] {
+  background-color: var(--theme-color) !important;
+}
+
+/* Additional specific overrides for any missed elements */
+.th-btn2 {
+  background-color: var(--theme-color2) !important;
+  color: var(--title-color) !important;
+}
+
+.th-btn2:before,
+.th-btn2:after {
+  background-color: var(--theme-color) !important;
+}
+
+.th-btn2.blue-btn {
+  background-color: var(--theme-color) !important;
+}
+
+.th-btn2.blue-btn:before,
+.th-btn2.blue-btn:after {
+  background-color: var(--theme-color2) !important;
+}
+
+/* Icon masking color */
+.icon-masking .mask-icon,
+.icon-masking2 .mask-icon {
+  background: var(--theme-color) !important;
+}
+
+/* Ensure proper contrast and readability */
+.text-white {
+  color: #ffffff !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+/* Final catch-all for any remaining theme color references */
+* {
+  --original-theme: var(--theme-color);
+}
+
+*[style*="#3E66F3"],
+*[style*="#3e66f3"],
+*[style*="rgb(62, 102, 243)"] {
+  color: var(--theme-color) !important;
+}
+
+*[style*="background-color: #3E66F3"],
+*[style*="background-color: #3e66f3"],
+*[style*="background-color: rgb(62, 102, 243)"] {
+  background-color: var(--theme-color) !important;
+}
+
+*[style*="border-color: #3E66F3"],
+*[style*="border-color: #3e66f3"],
+*[style*="border-color: rgb(62, 102, 243)"] {
+  border-color: var(--theme-color) !important;
+}
