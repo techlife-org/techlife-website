@@ -1,4 +1,4 @@
-import { ModuleType, Permission } from '@/types/dashboard';
+import { ModuleType, Permission } from '../types/dashboard';
 
 export interface NavigationItem {
   id: string;

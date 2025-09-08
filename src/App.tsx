@@ -30,7 +30,6 @@ import ErrorPage from './pages/ErrorPage';
 import ImageTest from './pages/ImageTest';
 
 // Dashboard Pages
-import MainTreasury from './pages/dashboard/MainTreasury';
 
 // Main styles are imported in public/index.html
 
@@ -66,8 +65,6 @@ function App() {
             <Route path="/image-test" element={<ImageTest />} />
             
             {/* Dashboard Routes */}
-            <Route path="/dashboard/main-treasury" element={<MainTreasury />} />
-            
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </main>

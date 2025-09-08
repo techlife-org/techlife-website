@@ -1,4 +1,4 @@
-import { DashboardData, BudgetSummary, PaymentStatistics, TrendData, DateRange } from "@/types/dashboard";
+import { DashboardData, BudgetSummary, PaymentStatistics, TrendData, DateRange } from "../types/dashboard";
 
 class DashboardService {
   private baseUrl = process.env.REACT_APP_API_URL || '/api';
