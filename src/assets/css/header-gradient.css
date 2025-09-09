@@ -1,0 +1,423 @@
+/* Techlife Header Gradient Styles */
+
+/* Header Top Section - Gradient Background */
+.header-top {
+  background: linear-gradient(135deg, #0046ff 0%, #001243 100%) !important;
+  background-color: #0046ff !important;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Add subtle pattern overlay to header top */
+.header-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><defs><pattern id=\"header-dots\" width=\"15\" height=\"15\" patternUnits=\"userSpaceOnUse\"><circle cx=\"7.5\" cy=\"7.5\" r=\"0.8\" fill=\"%23ffffff\" opacity=\"0.03\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(%23header-dots)\"/></svg>');
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Header top content positioning */
+.header-top .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header Links Styling */
+.header-links ul li {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 14px;
+  margin-right: 2rem;
+}
+
+.header-links ul li i {
+  color: #fbbf24 !important;
+  margin-right: 0.5rem;
+  font-size: 14px;
+}
+
+.header-links ul li a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.header-links ul li a:hover {
+  color: #fbbf24 !important;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.3);
+}
+
+/* Social Media Links in Header */
+.header-social .social-title {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+.header-social a {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  color: #ffffff !important;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+}
+
+.header-social a:hover {
+  background: rgba(251, 191, 36, 0.9) !important;
+  color: #001243 !important;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+  border-color: #fbbf24;
+}
+
+/* Main Header - Enhanced Gradient */
+.th-header {
+  background: linear-gradient(135deg, #0046ff 0%, #001243 100%) !important;
+  background-color: #0046ff !important;
+  position: relative;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header when sticky */
+.th-header.header-fixed {
+  background: linear-gradient(135deg, #0046ff 0%, #001243 100%) !important;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Area Styling */
+.menu-area {
+  background: transparent !important;
+  position: relative;
+  z-index: 10;
+}
+
+/* Main Navigation Links */
+.main-menu ul li a {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation hover effects */
+.main-menu ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #fbbf24;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.main-menu ul li a:hover {
+  color: #fbbf24 !important;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+}
+
+.main-menu ul li a:hover::before {
+  width: 80%;
+}
+
+/* Active navigation item */
+.main-menu ul li.active a {
+  color: #fbbf24 !important;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+}
+
+.main-menu ul li.active a::before {
+  width: 80%;
+}
+
+/* Header Buttons */
+.header-button .icon-btn {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.header-button .icon-btn:hover {
+  background: rgba(251, 191, 36, 0.9) !important;
+  color: #001243 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(251, 191, 36, 0.3);
+  border-color: #fbbf24;
+}
+
+/* Make Appointment Button */
+.header-button .th-btn.style3 {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+  color: #001243 !important;
+  border: none;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+}
+
+.header-button .th-btn.style3:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+}
+
+/* Mobile Menu Styling */
+.th-menu-wrapper {
+  background: linear-gradient(135deg, #0046ff 0%, #001243 100%) !important;
+}
+
+.th-menu-area {
+  background: transparent !important;
+}
+
+.th-mobile-menu ul li a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.th-mobile-menu ul li a:hover {
+  color: #fbbf24 !important;
+  padding-left: 1rem;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.3);
+}
+
+/* Mobile menu toggle button */
+.th-menu-toggle {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.th-menu-toggle:hover {
+  background: rgba(251, 191, 36, 0.9) !important;
+  color: #001243 !important;
+  border-color: #fbbf24;
+}
+
+/* Side Menu Styling */
+.sidemenu-wrapper {
+  background: linear-gradient(135deg, #0046ff 0%, #001243 100%) !important;
+}
+
+.sidemenu-content {
+  background: transparent !important;
+}
+
+.sidemenu-content .widget_title {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidemenu-content .closeButton {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.sidemenu-content .closeButton:hover {
+  background: rgba(251, 191, 36, 0.9) !important;
+  color: #001243 !important;
+  border-color: #fbbf24;
+}
+
+/* Search Box Styling */
+.popup-search-box {
+  background: linear-gradient(135deg, #0046ff 0%, #001243 100%) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.popup-search-box input {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff !important;
+  border-radius: 25px;
+  padding: 12px 20px;
+}
+
+.popup-search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.popup-search-box button[type=\"submit\"] {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+  color: #001243 !important;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.popup-search-box button[type=\"submit\"]:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+}
+
+.searchClose {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.searchClose:hover {
+  background: rgba(251, 191, 36, 0.9) !important;
+  color: #001243 !important;
+  border-color: #fbbf24;
+}
+
+/* Logo adjustments for gradient background */
+.th-header .mobile-logo img,
+.th-header img {
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.th-header .mobile-logo:hover img,
+.th-header a:hover img {
+  filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  transform: scale(1.02);
+}
+
+/* Badge styling */
+.header-button .badge {
+  background: #fbbf24 !important;
+  color: #001243 !important;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+/* Logo background */
+.logo-bg {
+  opacity: 0.05 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .header-top {
+    padding: 0.75rem 0;
+  }
+  
+  .header-links ul li {
+    margin-right: 1rem;
+    font-size: 13px;
+  }
+  
+  .header-social a {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top .col-auto:first-child {
+    display: none !important;
+  }
+  
+  .header-social {
+    text-align: center;
+  }
+  
+  .header-social .social-title {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Enhanced animations */
+@keyframes headerGlow {
+  0%, 100% {
+    box-shadow: 0 2px 20px rgba(0, 70, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 2px 20px rgba(0, 70, 255, 0.2);
+  }
+}
+
+.th-header {
+  animation: headerGlow 4s ease-in-out infinite;
+}
+
+/* Smooth transitions for all header elements */
+.th-header * {
+  transition: all 0.3s ease;
+}
+
+/* Enhanced focus states for accessibility */
+.main-menu ul li a:focus,
+.header-button .icon-btn:focus,
+.header-button .th-btn:focus {
+  outline: 2px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+/* Color scheme switcher adjustments */
+.color-scheme-wrap {
+  background: linear-gradient(135deg, #0046ff 0%, #001243 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.color-scheme-wrap-title {
+  color: #ffffff !important;
+}
+
+.color-switch-btns button {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.color-switch-btns button:hover {
+  border-color: #fbbf24;
+  transform: scale(1.1);
+}

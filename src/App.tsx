@@ -38,6 +38,7 @@ import './assets/css/techlife-custom.css';
 import './assets/css/color-override.css';
 import './assets/css/fixed-navbar.css';
 import './assets/css/footer-white.css';
+import './assets/css/header-gradient.css';
 import './assets/css/modern-ui-enhancements.css';
 import './assets/css/enhanced-components.css';
 import './assets/css/interactive-elements.css';
