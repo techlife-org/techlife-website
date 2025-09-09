@@ -27,9 +27,9 @@ const Home = () => {
       description: 'A visionary software developer passionate about creating innovative IT solutions. Full-stack developer and cybersecurity expert leading Techlife\'s strategic direction.',
       expertise: ['Software Development', 'Cybersecurity', 'Strategic Leadership', 'Innovation'],
       social: {
-        linkedin: '#',
-        twitter: '#',
-        instagram: '#'
+        linkedin: 'https://linktr.ee/Techlifeng',
+        twitter: 'https://x.com/techlifeng?s=21',
+        instagram: 'https://www.instagram.com/m_dalhatu_?igsh=Mmpnd3kzOW42czE2&utm_source=qr'
       }
     },
     {
@@ -40,8 +40,8 @@ const Home = () => {
       description: 'Software engineer specializing in full-stack development and data analytics. Drives technological innovation and technical excellence across all projects.',
       expertise: ['Full-Stack Development', 'Data Analytics', 'Technology Innovation', 'System Architecture'],
       social: {
-        linkedin: '#',
-        twitter: '#',
+        linkedin: 'https://linktr.ee/Techlifeng',
+        twitter: 'https://x.com/techlifeng?s=21',
         github: '#'
       }
     },
@@ -53,9 +53,9 @@ const Home = () => {
       description: 'Results-driven software engineer ensuring projects are completed efficiently and on time. Manages operations and delivery excellence.',
       expertise: ['Project Management', 'Operations', 'Software Engineering', 'Process Optimization'],
       social: {
-        linkedin: '#',
-        twitter: '#',
-        instagram: '#'
+        linkedin: 'https://linktr.ee/Techlifeng',
+        twitter: 'https://x.com/techlifeng?s=21',
+        instagram: 'https://www.instagram.com/m_dalhatu_?igsh=Mmpnd3kzOW42czE2&utm_source=qr'
       }
     },
     {
@@ -66,9 +66,9 @@ const Home = () => {
       description: 'Business administrator managing human resources and fostering team collaboration. Focuses on organizational development and team growth.',
       expertise: ['Human Resources', 'Team Management', 'Business Administration', 'Organizational Development'],
       social: {
-        linkedin: '#',
-        twitter: '#',
-        facebook: '#'
+        linkedin: 'https://linktr.ee/Techlifeng',
+        twitter: 'https://x.com/techlifeng?s=21',
+        facebook: 'https://www.facebook.com/share/1BFE9YKWWc/?mibextid=wwXIfr'
       }
     },
     {
@@ -79,22 +79,35 @@ const Home = () => {
       description: 'Oversees financial operations and leads the creative design team. Ensures fiscal responsibility while driving visual excellence and brand identity.',
       expertise: ['Financial Management', 'Visual Design', 'Creative Direction', 'Brand Development'],
       social: {
-        linkedin: '#',
+        linkedin: 'https://linktr.ee/Techlifeng',
         behance: '#',
-        instagram: '#'
+        instagram: 'https://www.instagram.com/m_dalhatu_?igsh=Mmpnd3kzOW42czE2&utm_source=qr'
       }
     },
     {
       id: 6,
-      name: 'CMO - [To Be Determined]',
+      name: 'Muhammad Muallayidi Dalhatu',
       position: 'Chief Marketing Officer (CMO)',
       image: '/assets/img/team/team_1_6.jpg',
-      description: 'Responsible for marketing strategies, brand growth, and outreach initiatives. Will lead efforts to expand market presence and drive business growth.',
-      expertise: ['Marketing Strategy', 'Brand Growth', 'Outreach Initiatives', 'Market Expansion'],
+      description: 'Strategic marketing leader driving brand growth and market expansion. Specializes in digital marketing, brand development, and customer engagement strategies.',
+      expertise: ['Marketing Strategy', 'Brand Development', 'Digital Marketing', 'Customer Engagement'],
       social: {
-        linkedin: '#',
-        twitter: '#',
-        instagram: '#'
+        linkedin: 'https://linktr.ee/Techlifeng',
+        twitter: 'https://x.com/techlifeng?s=21',
+        instagram: 'https://www.instagram.com/m_dalhatu_?igsh=Mmpnd3kzOW42czE2&utm_source=qr'
+      }
+    },
+    {
+      id: 7,
+      name: 'Abubakar Ibrahim',
+      position: 'Data Analyst',
+      image: '/assets/img/team/team_1_7.jpg',
+      description: 'Experienced data analyst specializing in business intelligence, data visualization, and insights-driven decision making. Transforms complex data into actionable business strategies.',
+      expertise: ['Data Analysis', 'Business Intelligence', 'Data Visualization', 'Statistical Analysis'],
+      social: {
+        linkedin: 'https://linktr.ee/Techlifeng',
+        twitter: 'https://x.com/techlifeng?s=21',
+        instagram: 'https://www.instagram.com/m_dalhatu_?igsh=Mmpnd3kzOW42czE2&utm_source=qr'
       }
     }
   ];

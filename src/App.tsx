@@ -28,6 +28,8 @@ import Wishlist from './pages/Wishlist';
 import Testimonial from './pages/Testimonial';
 import ErrorPage from './pages/ErrorPage';
 import ImageTest from './pages/ImageTest';
+import AOSDemo from './pages/AOSDemo';
+import EnhancedHome from './pages/EnhancedHome';
 
 // Dashboard Pages
 
@@ -35,6 +37,10 @@ import ImageTest from './pages/ImageTest';
 import './assets/css/techlife-custom.css';
 import './assets/css/color-override.css';
 import './assets/css/fixed-navbar.css';
+import './assets/css/footer-white.css';
+import './assets/css/modern-ui-enhancements.css';
+import './assets/css/enhanced-components.css';
+import './assets/css/interactive-elements.css';
 
 function App() {
   // Apply theme class to body for color scheme
@@ -71,6 +77,8 @@ function App() {
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/image-test" element={<ImageTest />} />
+            <Route path="/aos-demo" element={<AOSDemo />} />
+            <Route path="/enhanced-home" element={<EnhancedHome />} />
             
             {/* Dashboard Routes */}
             <Route path="*" element={<ErrorPage />} />

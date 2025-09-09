@@ -70,7 +70,7 @@ const Contact = () => {
                   <h4 className="box-title">Send An Email</h4>
                   <span className="contact-info_text">
                     <a href="mailto:info@techlife.ng">info@techlife.ng</a>
-                    <a href="https://www.instagram.com/techlife_nigeria">@techlife_nigeria</a>
+                    <a href="https://www.instagram.com/m_dalhatu_?igsh=Mmpnd3kzOW42czE2&utm_source=qr">@m_dalhatu_</a>
                   </span>
                 </div>
               </div>

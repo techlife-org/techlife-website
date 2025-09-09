@@ -1,0 +1,152 @@
+/* AOS Custom Styles for Techlife Website */
+
+/* Ensure smooth transitions for all AOS elements */
+[data-aos] {
+  transition-timing-function: ease-in-out;
+}
+
+/* Custom animation durations for different elements */
+.hero-subtitle[data-aos],
+.hero-title[data-aos],
+.hero-text[data-aos] {
+  transition-duration: 0.8s;
+}
+
+/* Service cards animation enhancement */
+.service-featured[data-aos],
+.service-card[data-aos] {
+  transition-duration: 0.6s;
+}
+
+/* Team carousel animation */
+.home-team-carousel[data-aos] {
+  transition-duration: 1s;
+}
+
+/* Portfolio cards staggered animation */
+.card[data-aos] {
+  transition-duration: 0.7s;
+}
+
+/* Counter cards zoom effect enhancement */
+.counter-card[data-aos] {
+  transition-duration: 0.5s;
+}
+
+/* Contact info cards */
+.contact-info[data-aos] {
+  transition-duration: 0.6s;
+}
+
+/* Form animation */
+.contact-form[data-aos] {
+  transition-duration: 0.8s;
+}
+
+/* Header sticky animation */
+.th-header[data-aos] {
+  transition-duration: 0.3s;
+}
+
+/* Custom fade-up-slow animation */
+[data-aos="fade-up-slow"] {
+  transform: translate3d(0, 60px, 0);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-up-slow"].aos-animate {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* Custom slide-in-left animation */
+[data-aos="slide-in-left"] {
+  transform: translate3d(-100px, 0, 0);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="slide-in-left"].aos-animate {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* Custom slide-in-right animation */
+[data-aos="slide-in-right"] {
+  transform: translate3d(100px, 0, 0);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="slide-in-right"].aos-animate {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* Enhanced zoom-in animation */
+[data-aos="zoom-in-up"] {
+  transform: translate3d(0, 40px, 0) scale(0.8);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="zoom-in-up"].aos-animate {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Reduce animation delays on mobile for better performance */
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
+  
+  /* Simplify animations on mobile */
+  [data-aos="flip-left"],
+  [data-aos="flip-right"] {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Loading state for AOS elements */
+[data-aos]:not(.aos-animate) {
+  visibility: hidden;
+}
+
+[data-aos].aos-animate {
+  visibility: visible;
+}
+
+/* Smooth scroll behavior for better UX with animations */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced hover effects for animated elements */
+.service-featured:hover,
+.service-card:hover,
+.team-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+/* Ensure animations work well with existing hover effects */
+.aos-animate .service-featured:hover,
+.aos-animate .service-card:hover,
+.aos-animate .team-card:hover {
+  transform: translateY(-10px);
+}

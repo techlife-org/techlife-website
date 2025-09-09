@@ -225,17 +225,20 @@ const Header = () => {
               <div className="col-auto">
                 <div className="header-social">
                   <span className="social-title">Follow Us On : </span>
-                  <a href="https://www.instagram.com/techlife_nigeria">
+                  <a href="https://www.instagram.com/m_dalhatu_?igsh=Mmpnd3kzOW42czE2&utm_source=qr">
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a href="https://www.twitter.com/">
+                  <a href="https://x.com/techlifeng?s=21">
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a href="https://www.linkedin.com/">
+                  <a href="https://linktr.ee/Techlifeng">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
-                  <a href="https://www.youtube.com/">
+                  <a href="https://youtube.com/@techlifeng?si=WX2tVjR11gxScOb2">
                     <i className="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://www.tiktok.com/@techlife_nigeria?_t=ZS-8za5Ezsim7s&_r=1">
+                    <i className="fab fa-tiktok"></i>
                   </a>
                 </div>
               </div>

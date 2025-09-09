@@ -1,0 +1,229 @@
+/* Team Carousel Styles */
+
+/* Carousel Container */
+.team-carousel,
+.home-team-carousel {
+  padding: 20px 0;
+  overflow: hidden;
+  min-height: 400px; /* Ensure minimum height */
+  width: 100%;
+}
+
+
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-navigation .btn {
+  border: 2px solid #0046ff;
+  color: #0046ff;
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 70, 255, 0.1);
+}
+
+.carousel-navigation .btn:hover {
+  background: #0046ff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 70, 255, 0.3);
+}
+
+.carousel-navigation .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 70, 255, 0.25);
+}
+
+/* Team Card Enhancements */
+.team-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 70, 255, 0.15);
+  border-color: rgba(0, 70, 255, 0.3) !important;
+}
+
+.team-card .card-img-top img {
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .card-img-top img {
+  transform: scale(1.05);
+}
+
+/* Swiper Pagination Customization */
+.team-pagination .swiper-pagination-bullet,
+.home-team-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 70, 255, 0.3);
+  opacity: 1;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.team-pagination .swiper-pagination-bullet-active,
+.home-team-pagination .swiper-pagination-bullet-active {
+  background: #0046ff;
+  transform: scale(1.2);
+}
+
+/* Swiper Navigation Arrows */
+.team-prev,
+.team-next,
+.home-team-prev,
+.home-team-next {
+  position: relative;
+  z-index: 10;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-navigation {
+    margin-bottom: 20px;
+  }
+  
+  .carousel-navigation .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+  
+  .team-card {
+    margin: 0 5px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-carousel,
+  .home-team-carousel {
+    padding: 10px 0;
+  }
+  
+  .team-card .card-body {
+    padding: 20px !important;
+  }
+  
+  .team-card .card-text {
+    font-size: 13px !important;
+  }
+}
+
+/* Animation for carousel initialization */
+.swiper-container-initialized .swiper-slide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.swiper-slide {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s ease;
+}
+
+/* Loading state */
+.team-carousel:not(.swiper-container-initialized),
+.home-team-carousel:not(.swiper-container-initialized) {
+  opacity: 0.7;
+}
+
+.team-carousel.swiper-container-initialized,
+.home-team-carousel.swiper-container-initialized {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Custom scrollbar for carousel area */
+.team-carousel::-webkit-scrollbar,
+.home-team-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ensure proper spacing */
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-slide .card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-slide .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Autoplay pause on hover */
+.team-carousel:hover,
+.home-team-carousel:hover {
+  cursor: grab;
+}
+
+.team-carousel:active,
+.home-team-carousel:active {
+  cursor: grabbing;
+}
+
+/* Enhanced social buttons */
+.team-card .btn-outline-primary {
+  border-color: rgba(0, 70, 255, 0.3);
+  color: #0046ff;
+  transition: all 0.2s ease;
+}
+
+.team-card .btn-outline-primary:hover {
+  background: #0046ff;
+  border-color: #0046ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Badge styling */
+.team-card .badge {
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+/* Card title styling */
+.team-card .card-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+/* Position styling */
+.team-card .text-primary {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Description text */
+.team-card .card-text {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}

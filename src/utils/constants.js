@@ -14,11 +14,13 @@ export const CONTACT_INFO = {
 
 // Social media links
 export const SOCIAL_LINKS = {
-  facebook: 'https://www.facebook.com/',
-  twitter: 'https://www.twitter.com/',
-  linkedin: 'https://www.linkedin.com/',
-  instagram: 'https://www.instagram.com/',
-  youtube: 'https://www.youtube.com/'
+  facebook: 'https://www.facebook.com/share/1BFE9YKWWc/?mibextid=wwXIfr',
+  twitter: 'https://x.com/techlifeng?s=21',
+  linkedin: 'https://linktr.ee/Techlifeng',
+  instagram: 'https://www.instagram.com/m_dalhatu_?igsh=Mmpnd3kzOW42czE2&utm_source=qr',
+  youtube: 'https://youtube.com/@techlifeng?si=WX2tVjR11gxScOb2',
+  tiktok: 'https://www.tiktok.com/@techlife_nigeria?_t=ZS-8za5Ezsim7s&_r=1',
+  threads: 'https://www.threads.com/@techlife_nigeria?igshid=NTc4MTIwNjQ2YQ=='
 };
 
 // Navigation menu items
