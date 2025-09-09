@@ -163,7 +163,7 @@ const Header = () => {
           <div className="mobile-logo">
             <Link className="icon-masking" to="/">
               <span data-mask-src="/assets/img/logo.png" className="mask-icon"></span>
-              <img src="/assets/img/logo.png" alt="Webteck" className="img-fluid" style={{ width: '200px' }}/>
+                      <img src="/assets/img/logo.png" alt="Webteck" className="img-fluid" style={{ width: '180px' }}/>
             </Link>
           </div>
           <div className="th-mobile-menu">
@@ -252,12 +252,12 @@ const Header = () => {
         <div className={`sticky-wrapper ${isSticky ? 'sticky fixed-navbar' : ''}`}>
           <div className="menu-area">
             <div className="container">
-              <div className="row align-items-center justify-content-between">
+              <div className="row align-items-center">
                 <div className="col-auto">
                   <div className="">
                     <Link className="icon-masking" to="/">
                       <span data-mask-src="/assets/img/logo.png" className="mask-icon"></span>
-                      <img src="/assets/img/logo.png" alt="Webteck" className="img-fluid" style={{ width: '200px' }}/>
+                      <img src="/assets/img/logo.png" alt="Webteck" className="img-fluid" style={{ width: '180px' }}/>
                     </Link>
                   </div>
                 </div>
@@ -294,26 +294,9 @@ const Header = () => {
                       </li>
                     </ul>
                   </nav>
-                  <div className="header-button">
-                    <button
-                      type="button"
-                      className="icon-btn sideMenuToggler d-inline-block d-lg-none"
-                      onClick={toggleSideMenu}
-                    >
-                      <i className="fal fa-shopping-cart"></i>
-                      <span className="badge">5</span>
-                    </button>
-                    <button
-                      type="button"
-                      className="th-menu-toggle d-inline-block d-lg-none"
-                      onClick={toggleMenu}
-                    >
-                      <i className="far fa-bars"></i>
-                    </button>
-                  </div>
-                </div>
-                <div className="col-auto d-none d-lg-block">
-                  <div className="header-button">
+                  
+                  {/* Desktop Header Buttons - Inline with Navigation */}
+                  <div className="header-button d-none d-lg-flex">
                     <button
                       type="button"
                       className="icon-btn searchBoxToggler"
@@ -325,6 +308,25 @@ const Header = () => {
                       Make Appointment
                       <i className="fas fa-arrow-right ms-1"></i>
                     </Link>
+                  </div>
+                  
+                  {/* Mobile Menu Buttons */}
+                  <div className="header-button d-lg-none">
+                    <button
+                      type="button"
+                      className="icon-btn sideMenuToggler d-inline-block"
+                      onClick={toggleSideMenu}
+                    >
+                      <i className="fal fa-shopping-cart"></i>
+                      <span className="badge">5</span>
+                    </button>
+                    <button
+                      type="button"
+                      className="th-menu-toggle d-inline-block"
+                      onClick={toggleMenu}
+                    >
+                      <i className="far fa-bars"></i>
+                    </button>
                   </div>
                 </div>
               </div>
