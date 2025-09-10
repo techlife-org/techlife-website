@@ -310,24 +310,7 @@ const Header = () => {
                     </Link>
                   </div>
                   
-                  {/* Mobile Menu Buttons */}
-                  <div className="header-button d-lg-none">
-                    <button
-                      type="button"
-                      className="icon-btn sideMenuToggler d-inline-block"
-                      onClick={toggleSideMenu}
-                    >
-                      <i className="fal fa-shopping-cart"></i>
-                      <span className="badge">5</span>
-                    </button>
-                    <button
-                      type="button"
-                      className="th-menu-toggle d-inline-block"
-                      onClick={toggleMenu}
-                    >
-                      <i className="far fa-bars"></i>
-                    </button>
-                  </div>
+
                 </div>
               </div>
             </div>
